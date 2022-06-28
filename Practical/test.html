@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" name="firstname">
+    <br>
+    <input type="text" name="lastname">
+    <br>
+    <input type="submit" value="Submit">
+    <script>
+
+
+
+        var firstname, lastname;
+        firstname = prompt("Enter your first name: ");
+        document.write("<h1> First Name: " + firstname + "</h1> <br>");
+
+        lastname = prompt("Enter your last name: ");
+        document.write("<h1>Last Name: " + lastname + "</h1> <br>");
+
+        var bla;
+
+        bla = prompt("Enter any number: ");
+
+
+        switch (parseInt(bla)) {
+            case 1:
+                alert("dghf");
+                if (parseInt(bla) == 5) {
+                    console.log("Number =5");
+                }
+                break;
+            case 2:
+                if (parseInt(bla) > 5) {
+                    console.log("number > 5");
+                }
+                break;
+            default:
+                if (parseInt(bla) < 5) {
+                    console.log("number < 5");
+                }
+        }
+
+
+    </script>
+</body>
+
+</html>
