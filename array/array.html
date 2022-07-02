@@ -33,7 +33,39 @@
             document.write(fruit3[i] + "<br>");
         }
 
+        document.write("<hr>");
         
+        // Array sorting
+        var arr = new Array(7,2,8,1,3,4);
+        var i,j, temp;
+
+        // Print the values of array
+        for(i = 0; i<6; i++)
+        {
+            document.write(arr[i] + "<br>");
+        }
+
+        document.write("<br>" + "Sorted Values " + "<br><br>");
+        
+        // 
+        for(i = 0; i < 6; i++)
+        {
+            for( j =0; j < 5; j++)
+            {
+                if(arr[j] > arr[j+1])
+                {
+                    temp = arr[j];
+                    arr[j]= arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }    
+        }
+        // Print the sorted values
+        for(i = 0; i<6; i++)
+        {
+            document.write(arr[i] + "<br>");
+        }
+
         
     </script>
 
