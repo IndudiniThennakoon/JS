@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>function</title>
     <script>
-        function sayHello()
+        function sayHello(name,age)
         {
-            document.write("Hello there!");
+            document.write(name +" is " + age + " years old. ");
         }
     </script>
 </head>
@@ -17,7 +17,10 @@
         Click the following button to call the function
     </p>
     <form>
-        <input type ="button" onclick = "sayHello()" value = "say Hello">
+        <input name = "t1" placeholder = "Enter Name" /><br>
+        <input name = "t2" placeholder = "Enter Age" /><br>
+        
+        <input type ="button" onclick = "sayHello(t1.value,t2.value)" value = "say Hello">
     </form>
     
 </body>
