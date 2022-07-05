@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script langauge = "javascript" type = "text/javascript">
+        var tutorial ={
+            "topic" : "javascript",
+            "trainer" : "Indu",
+            "mode" : "Online"
+        };
+
+        document.write("Topic : " + tutorial.topic);
+        document.write("<br> <br>" );
+        document.write("Trainer : " + tutorial.trainer);
+        document.write("<br> <br>" );
+        document.write("Mode : " + tutorial.mode);
+        document.write("<br> <br>" );
+
+        var txt = "";
+        var x;
+        for(x in tutorial)
+        {
+            txt += tutorial[x] + ",";
+        }
+        document.write(txt);
+    </script>
+</body>
+</html>
